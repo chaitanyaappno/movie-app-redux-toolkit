@@ -8,11 +8,13 @@ import PageNotFound from "./components/PageNotFound/PageNotFound";
 
 function App() {
   return (
-    <Routes>
-      <Route exact path="/" element={<Home />} />
-      <Route path="/movie/:id" element={<MovieDetail />} />
-      <Route path="*" element={<PageNotFound />} />
-    </Routes>
+    <div className="App">
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route path="/movie/:id" element={<MovieDetail />} />
+        <Route path="*" element={<PageNotFound />} />
+      </Routes>
+    </div>
   );
 }
 
